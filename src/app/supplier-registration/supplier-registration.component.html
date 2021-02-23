@@ -1,0 +1,134 @@
+<app-navigation></app-navigation>
+<main>
+  <!-- Page Header Start -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Supplier Registration</h2>
+        </div>
+        <!-- <div class="col-12">
+                    <a href="">Home</a>
+                    <a href="">Supplier Registration</a>
+                </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Page Header End -->
+  <!-- Blog Start -->
+  <div class="blog">
+    <div class="container-fluid">
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">First Name : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.first_name" #ctrl="ngModel" placeholder="First Name" required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Last Name : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.last_name" #ctrl="ngModel" name="lname" placeholder="Last Name"
+            value="" required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Email : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.email" #ctrl="ngModel" name="email" placeholder="Email" value=""
+            required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">NIC : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.nicno" #ctrl="ngModel" name="nic" placeholder="NIC" value=""
+            required>
+          <br>
+          <input type="file" class="form-control" name="nic_pic" placeholder="NIC" required>
+        </div>
+      </div>
+
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Profile Picture : </label>
+        </div>
+        <div class="col-lg-6">
+
+          <input type="file" class="form-control" (change)="handleFileInput($event.target.files)" name="profile_pic"
+            placeholder="Profile picture" value="" required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Contact Number : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.phone" #ctrl="ngModel" name="contact" placeholder="Contact Number"
+            value="" required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Supplier type : </label>
+        </div>
+        <div class="col-lg-6">
+          <select class="form-control selectpicker" [(ngModel)]="user.sup_type" #ctrl="ngModel" name="Supplier_type" required>
+            <option value="">-----Select Suppling type-----</option>
+
+            <option value="Hospitality partner">Hospitality partners</option>
+            <option value="Decorater">Decorations</option>
+            <option value="Entertainer">Entertaining</option>
+            <option value="Vehicle Hire">Tranceportation</option>
+            <option value="Photographer">photography</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Amount : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" [(ngModel)]="user.amount" #ctrl="ngModel" name="amount" placeholder="Amount" value=""
+            required>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Address : </label>
+        </div>
+        <div class="col-lg-6">
+          <textarea type="text" class="form-control" [(ngModel)]="user.address" #ctrl="ngModel" name="Address" placeholder="Address"
+            required></textarea>
+        </div>
+      </div>
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+          <label class="Label">Password : </label>
+        </div>
+        <div class="col-lg-6">
+          <input type="password" class="form-control" [(ngModel)]="user.password" #ctrl="ngModel" name="password" placeholder="Password"
+            value="" required>
+        </div>
+      </div>
+
+      <div class="row rows form-group">
+        <div class="col-lg-4 text-lg-right">
+        </div>
+        <div class="col-lg-6">
+          <button class="btn" (click)="register()">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+</main>
+<app-web-footer></app-web-footer>

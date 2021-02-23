@@ -1,0 +1,76 @@
+<nav id="Navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="../../assets/images/WhatsApp Image 2021-02-05 at 20.27.18.png" class="img-fluid logoimage"
+      alt="Placeholder image"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">services</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/Blog">Hospitality partners</a>
+            <a class="dropdown-item" href="/Blog">Entertainig</a>
+            <a class="dropdown-item" href="/Blog">Transportation</a>
+            <a class="dropdown-item" href="/Blog">Decoration</a>
+            <a class="dropdown-item" href="/Blog">Photography</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blog">Blog/About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/Login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<!-- Subscribe Modal -->
+<div class="modal fade" id="login" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <form method="POST" action="">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="w3wide"><span>Contact Us</span></h2>
+                  <p class="w2wide">Pleace state here your valuable comments and your problems
+                  </p>
+                  <div class="form-group">
+                      <label class="Label">First Name : </label>
+                      <input type="text" class="form-control"  name="FirstName" placeholder="First Name" value="" required>
+                  </div>
+                  <!-- <div class="form-group">
+                      <label class="Label">Last Name : </label>
+                      <input type="text" class="form-control"  name="LastName" placeholder="Last Name" value="" required>
+                  </div> -->
+                  <div class="form-group">
+                      <label class="Label">Email : </label>
+                      <input type="email" class="form-control" name="Email" placeholder="Email" value="" required>
+                  </div>
+                  <!-- <div class="container">
+                    <h2>Form control: textarea</h2>
+                    <p>The form below contains a textarea for comments:</p> -->
+                    <form>
+                      <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </form>
+                  <!-- </div> -->
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-lg">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
